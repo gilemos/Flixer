@@ -9,6 +9,9 @@
 #import "MoviesViewController.h"
 #import "MovieCellTableViewCell.h"
 
+//This one we imported with the library we got from the coconut pod thing
+#import "UIImageView+AFNetworking.h"
+
 
 @interface MoviesViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -68,6 +71,21 @@
     cell.titleLabel.text = movieNames[@"title"];
     
     cell.descriptionLabel.text = movieNames[@"overview"];
+
+    
+    NSString *baseURL = @"https://image.tmdb.org/t/p/w500";
+    
+    NSString *endingURL = movieNames[@"poster_path"];
+    
+    NSString *completeURL = [baseURL stringByAppendingString:endingURL];
+    
+    //We need to change it into the format of an NSURL. It is just like the String, but it will
+    //Check to see if it is a valid URL.
+    NSURL *posterURL = [NSURL URLWithString:completeURL];
+    
+    [cell.movieImage setImageWithURL:posterURL];
+    
+    
     
     
     return cell;
