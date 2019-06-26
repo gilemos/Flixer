@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		71F3310922C3EA07007D4723 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F3310822C3EA07007D4723 /* AppDelegate.m */; };
-		71F3310C22C3EA07007D4723 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F3310B22C3EA07007D4723 /* ViewController.m */; };
 		71F3310F22C3EA07007D4723 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F3310D22C3EA07007D4723 /* Main.storyboard */; };
 		71F3311122C3EA07007D4723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71F3311022C3EA07007D4723 /* Assets.xcassets */; };
 		71F3311422C3EA07007D4723 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F3311222C3EA07007D4723 /* LaunchScreen.storyboard */; };
 		71F3311722C3EA07007D4723 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F3311622C3EA07007D4723 /* main.m */; };
 		71F3312122C3EA07007D4723 /* FlixerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F3312022C3EA07007D4723 /* FlixerTests.m */; };
 		71F3312C22C3EA07007D4723 /* FlixerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F3312B22C3EA07007D4723 /* FlixerUITests.m */; };
+		71F3313B22C3FB81007D4723 /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F3313A22C3FB81007D4723 /* MoviesViewController.m */; };
+		71F3314222C419F0007D4723 /* MovieCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F3314122C419F0007D4723 /* MovieCellTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,6 @@
 		71F3310422C3EA07007D4723 /* Flixer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flixer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F3310722C3EA07007D4723 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71F3310822C3EA07007D4723 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		71F3310A22C3EA07007D4723 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		71F3310B22C3EA07007D4723 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		71F3310E22C3EA07007D4723 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71F3311022C3EA07007D4723 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71F3311322C3EA07007D4723 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,10 @@
 		71F3312722C3EA07007D4723 /* FlixerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlixerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F3312B22C3EA07007D4723 /* FlixerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlixerUITests.m; sourceTree = "<group>"; };
 		71F3312D22C3EA07007D4723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71F3313922C3FB81007D4723 /* MoviesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviesViewController.h; sourceTree = "<group>"; };
+		71F3313A22C3FB81007D4723 /* MoviesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesViewController.m; sourceTree = "<group>"; };
+		71F3314022C419F0007D4723 /* MovieCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCellTableViewCell.h; sourceTree = "<group>"; };
+		71F3314122C419F0007D4723 /* MovieCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCellTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +104,11 @@
 		71F3310622C3EA07007D4723 /* Flixer */ = {
 			isa = PBXGroup;
 			children = (
+				71F3313F22C3FCA5007D4723 /* Models */,
+				71F3313E22C3FC93007D4723 /* Views */,
+				71F3313C22C3FC73007D4723 /* View Controlers */,
 				71F3310722C3EA07007D4723 /* AppDelegate.h */,
 				71F3310822C3EA07007D4723 /* AppDelegate.m */,
-				71F3310A22C3EA07007D4723 /* ViewController.h */,
-				71F3310B22C3EA07007D4723 /* ViewController.m */,
 				71F3310D22C3EA07007D4723 /* Main.storyboard */,
 				71F3311022C3EA07007D4723 /* Assets.xcassets */,
 				71F3311222C3EA07007D4723 /* LaunchScreen.storyboard */,
@@ -130,6 +134,31 @@
 				71F3312D22C3EA07007D4723 /* Info.plist */,
 			);
 			path = FlixerUITests;
+			sourceTree = "<group>";
+		};
+		71F3313C22C3FC73007D4723 /* View Controlers */ = {
+			isa = PBXGroup;
+			children = (
+				71F3313A22C3FB81007D4723 /* MoviesViewController.m */,
+				71F3313922C3FB81007D4723 /* MoviesViewController.h */,
+			);
+			path = "View Controlers";
+			sourceTree = "<group>";
+		};
+		71F3313E22C3FC93007D4723 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				71F3314022C419F0007D4723 /* MovieCellTableViewCell.h */,
+				71F3314122C419F0007D4723 /* MovieCellTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		71F3313F22C3FCA5007D4723 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +291,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71F3310C22C3EA07007D4723 /* ViewController.m in Sources */,
 				71F3311722C3EA07007D4723 /* main.m in Sources */,
 				71F3310922C3EA07007D4723 /* AppDelegate.m in Sources */,
+				71F3314222C419F0007D4723 /* MovieCellTableViewCell.m in Sources */,
+				71F3313B22C3FB81007D4723 /* MoviesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
