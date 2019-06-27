@@ -23,14 +23,20 @@
 @property (weak, nonatomic) IBOutlet UITableView *moviesTableView;
 
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @end
 
 @implementation MoviesViewController
 
 - (void)viewDidLoad {
+    [self.activityIndicator startAnimating];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    // Start the activity indicator
+    
+    // Stop the activity indicator
+    // Hides automatically if "Hides When Stopped" is enabled
     
     self.moviesTableView.dataSource = self;
     self.moviesTableView.delegate = self;

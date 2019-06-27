@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="-571.31999999999994" y="34.346666666666671"/>
         </scene>
-        <!--Movies View Controller-->
+        <!--Movies-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MoviesViewController" sceneMemberID="viewController">
@@ -33,6 +33,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="ASl-SK-SSh">
+                                <rect key="frame" x="189" y="430" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="206" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FsR-xw-Dga">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -78,8 +83,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="hUP-2W-ghb"/>
+                    <navigationItem key="navigationItem" title="Movies" id="hUP-2W-ghb"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="ASl-SK-SSh" id="Z5L-QE-Dwd"/>
                         <outlet property="moviesTableView" destination="FsR-xw-Dga" id="f1L-hh-0Oh"/>
                     </connections>
                 </viewController>
@@ -87,7 +93,7 @@
             </objects>
             <point key="canvasLocation" x="31.884057971014496" y="30.803571428571427"/>
         </scene>
-        <!--Details View Controller-->
+        <!--Details-->
         <scene sceneID="8QX-rL-onM">
             <objects>
                 <viewController id="zc3-Jk-fNv" customClass="DetailsViewController" sceneMemberID="viewController">
@@ -126,7 +132,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" id="OVC-TT-53a"/>
+                    <navigationItem key="navigationItem" title="Details" id="OVC-TT-53a"/>
                     <connections>
                         <outlet property="bigImage" destination="phr-Ip-fYM" id="4YF-3L-ytw"/>
                         <outlet property="movieTitleLabel" destination="xRe-aq-256" id="wfy-b8-kc1"/>
