@@ -30,7 +30,6 @@
 @implementation MoviesViewController
 
 - (void)viewDidLoad {
-    [self.activityIndicator startAnimating];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     // Start the activity indicator
@@ -40,6 +39,8 @@
     
     self.moviesTableView.dataSource = self;
     self.moviesTableView.delegate = self;
+    
+    [self.activityIndicator startAnimating];
     [self fetchMovies];
     
     self.refreshControl = [[UIRefreshControl alloc] init];
@@ -71,6 +72,7 @@
             }
             
             [self.moviesTableView reloadData];
+            [self.activityIndicator stopAnimating];
             // TODO: Get the array of movies
             // TODO: Store the movies in a property to use elsewhere
             // TODO: Reload your table view data
@@ -79,6 +81,7 @@
         [self.refreshControl endRefreshing];
     }];
     [task resume];
+    
 }
     
 
