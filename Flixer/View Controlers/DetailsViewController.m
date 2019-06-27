@@ -46,6 +46,9 @@
     
     self.synopsisLabel.text = self.movie[@"overview"];
     
+    [self.movieTitleLabel sizeToFit];
+    [self.synopsisLabel sizeToFit];
+    
                                            
     
     // Do any additional setup after loading the view.
