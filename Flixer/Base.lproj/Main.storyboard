@@ -26,11 +26,11 @@
             </objects>
             <point key="canvasLocation" x="-913" y="31"/>
         </scene>
-        <!--Item-->
+        <!--Collection View-->
         <scene sceneID="dkG-39-taj">
             <objects>
                 <navigationController id="FcH-Kb-Kdy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Ptu-fy-q85"/>
+                    <tabBarItem key="tabBarItem" title="Collection View" id="Ptu-fy-q85"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jaZ-yn-VNx">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -163,6 +163,7 @@
                                         </view>
                                         <connections>
                                             <outlet property="picture" destination="U8j-9m-fBN" id="0Ww-dC-jSA"/>
+                                            <segue destination="zc3-Jk-fNv" kind="push" id="krn-5R-QpJ"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -231,4 +232,7 @@
             <point key="canvasLocation" x="-913" y="1753"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="4GN-0E-gzT"/>
+    </inferredMetricsTieBreakers>
 </document>
