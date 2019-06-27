@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2133E23FC24563CF21F9C133 /* Pods_Flixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45DE493E4C05B779A6599364 /* Pods_Flixer.framework */; };
+		71DC441F22C551E900E48539 /* MoviesGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DC441E22C551E900E48539 /* MoviesGridViewController.m */; };
+		71DC442222C5564800E48539 /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DC442122C5564800E48539 /* MovieCollectionViewCell.m */; };
 		71F3310922C3EA07007D4723 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F3310822C3EA07007D4723 /* AppDelegate.m */; };
 		71F3310F22C3EA07007D4723 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F3310D22C3EA07007D4723 /* Main.storyboard */; };
 		71F3311122C3EA07007D4723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71F3311022C3EA07007D4723 /* Assets.xcassets */; };
@@ -45,6 +47,10 @@
 		45DE493E4C05B779A6599364 /* Pods_Flixer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flixer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5623B74AF21DE02472A05B /* Pods-FlixerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixerTests.release.xcconfig"; path = "Target Support Files/Pods-FlixerTests/Pods-FlixerTests.release.xcconfig"; sourceTree = "<group>"; };
 		5D6638CF8A9A2D29B7372C37 /* Pods-Flixer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixer.debug.xcconfig"; path = "Target Support Files/Pods-Flixer/Pods-Flixer.debug.xcconfig"; sourceTree = "<group>"; };
+		71DC441D22C551E900E48539 /* MoviesGridViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviesGridViewController.h; sourceTree = "<group>"; };
+		71DC441E22C551E900E48539 /* MoviesGridViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesGridViewController.m; sourceTree = "<group>"; };
+		71DC442022C5564800E48539 /* MovieCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCollectionViewCell.h; sourceTree = "<group>"; };
+		71DC442122C5564800E48539 /* MovieCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionViewCell.m; sourceTree = "<group>"; };
 		71F3310422C3EA07007D4723 /* Flixer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flixer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F3310722C3EA07007D4723 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71F3310822C3EA07007D4723 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -176,6 +182,8 @@
 				71F3313922C3FB81007D4723 /* MoviesViewController.h */,
 				71F3314922C43E6D007D4723 /* DetailsViewController.h */,
 				71F3314A22C43E6D007D4723 /* DetailsViewController.m */,
+				71DC441D22C551E900E48539 /* MoviesGridViewController.h */,
+				71DC441E22C551E900E48539 /* MoviesGridViewController.m */,
 			);
 			path = "View Controlers";
 			sourceTree = "<group>";
@@ -185,6 +193,8 @@
 			children = (
 				71F3314022C419F0007D4723 /* MovieCellTableViewCell.h */,
 				71F3314122C419F0007D4723 /* MovieCellTableViewCell.m */,
+				71DC442022C5564800E48539 /* MovieCollectionViewCell.h */,
+				71DC442122C5564800E48539 /* MovieCollectionViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -431,6 +441,8 @@
 				71F3310922C3EA07007D4723 /* AppDelegate.m in Sources */,
 				71F3314222C419F0007D4723 /* MovieCellTableViewCell.m in Sources */,
 				71F3313B22C3FB81007D4723 /* MoviesViewController.m in Sources */,
+				71DC441F22C551E900E48539 /* MoviesGridViewController.m in Sources */,
+				71DC442222C5564800E48539 /* MovieCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

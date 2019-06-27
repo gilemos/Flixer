@@ -117,7 +117,7 @@
     cell.titleLabel.text = movieNames[@"title"];
     
     cell.descriptionLabel.text = movieNames[@"overview"];
-
+    
     
     NSString *baseURL = @"https://image.tmdb.org/t/p/w500";
     
@@ -130,8 +130,6 @@
     NSURL *posterURL = [NSURL URLWithString:completeURL];
     
     [cell.movieImage setImageWithURL:posterURL];
-    
-    
     
     
     return cell;
