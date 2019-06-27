@@ -41,6 +41,7 @@
     self.moviesTableView.delegate = self;
     
     [self.activityIndicator startAnimating];
+    
     [self fetchMovies];
     
     self.refreshControl = [[UIRefreshControl alloc] init];
@@ -58,6 +59,24 @@
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (error != nil) {
             NSLog(@"%@", [error localizedDescription]);
+            
+            //my code for bonus section 1 - Alert Controller
+            
+            //Creating an allert controller
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Network Error" message:@"Could not fetch the movies, sorry! Please check you internet connection" preferredStyle:(UIAlertControllerStyleAlert)];
+            
+            //Creating an action for the allert controller
+            UIAlertAction *tryAgainAction = [UIAlertAction actionWithTitle:@"TryAgain" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    [self fetchMovies];
+            }];
+            
+            //Connecting the action with the controller
+            [alert addAction:tryAgainAction];
+            
+            //Presenting the controller
+            [self presentViewController:alert animated:YES completion:^{
+                // optional code for what happens after the alert controller has finished presenting
+            }];
         }
         else {
             NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
