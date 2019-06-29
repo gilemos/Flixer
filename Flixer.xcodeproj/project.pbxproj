@@ -10,6 +10,8 @@
 		2133E23FC24563CF21F9C133 /* Pods_Flixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45DE493E4C05B779A6599364 /* Pods_Flixer.framework */; };
 		71DC441F22C551E900E48539 /* MoviesGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DC441E22C551E900E48539 /* MoviesGridViewController.m */; };
 		71DC442222C5564800E48539 /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DC442122C5564800E48539 /* MovieCollectionViewCell.m */; };
+		71DC442822C58E8000E48539 /* TrailerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DC442722C58E8000E48539 /* TrailerViewController.m */; };
+		71DC442A22C590DF00E48539 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DC442922C590DF00E48539 /* WebKit.framework */; };
 		71F3310922C3EA07007D4723 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F3310822C3EA07007D4723 /* AppDelegate.m */; };
 		71F3310F22C3EA07007D4723 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F3310D22C3EA07007D4723 /* Main.storyboard */; };
 		71F3311122C3EA07007D4723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71F3311022C3EA07007D4723 /* Assets.xcassets */; };
@@ -51,6 +53,9 @@
 		71DC441E22C551E900E48539 /* MoviesGridViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesGridViewController.m; sourceTree = "<group>"; };
 		71DC442022C5564800E48539 /* MovieCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCollectionViewCell.h; sourceTree = "<group>"; };
 		71DC442122C5564800E48539 /* MovieCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionViewCell.m; sourceTree = "<group>"; };
+		71DC442622C58E8000E48539 /* TrailerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrailerViewController.h; sourceTree = "<group>"; };
+		71DC442722C58E8000E48539 /* TrailerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrailerViewController.m; sourceTree = "<group>"; };
+		71DC442922C590DF00E48539 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		71F3310422C3EA07007D4723 /* Flixer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flixer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F3310722C3EA07007D4723 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71F3310822C3EA07007D4723 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71DC442A22C590DF00E48539 /* WebKit.framework in Frameworks */,
 				2133E23FC24563CF21F9C133 /* Pods_Flixer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +184,8 @@
 		71F3313C22C3FC73007D4723 /* View Controlers */ = {
 			isa = PBXGroup;
 			children = (
+				71DC442622C58E8000E48539 /* TrailerViewController.h */,
+				71DC442722C58E8000E48539 /* TrailerViewController.m */,
 				71F3313A22C3FB81007D4723 /* MoviesViewController.m */,
 				71F3313922C3FB81007D4723 /* MoviesViewController.h */,
 				71F3314922C43E6D007D4723 /* DetailsViewController.h */,
@@ -209,6 +217,7 @@
 		8BEED32ABA9300A862381780 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				71DC442922C590DF00E48539 /* WebKit.framework */,
 				45DE493E4C05B779A6599364 /* Pods_Flixer.framework */,
 				E9C191824C410B294EB22003 /* Pods_FlixerTests.framework */,
 				A7418D4D8A2CAD275D2B0B2C /* Pods_FlixerUITests.framework */,
@@ -227,7 +236,7 @@
 				71F3310022C3EA07007D4723 /* Sources */,
 				71F3310122C3EA07007D4723 /* Frameworks */,
 				71F3310222C3EA07007D4723 /* Resources */,
-				118D6DFA21BF311CFB1F8967 /* [CP] Embed Pods Frameworks */,
+				04DB06501574E216BD464ACC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -346,7 +355,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		118D6DFA21BF311CFB1F8967 /* [CP] Embed Pods Frameworks */ = {
+		04DB06501574E216BD464ACC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -440,6 +449,7 @@
 				71F3314B22C43E6D007D4723 /* DetailsViewController.m in Sources */,
 				71F3310922C3EA07007D4723 /* AppDelegate.m in Sources */,
 				71F3314222C419F0007D4723 /* MovieCellTableViewCell.m in Sources */,
+				71DC442822C58E8000E48539 /* TrailerViewController.m in Sources */,
 				71F3313B22C3FB81007D4723 /* MoviesViewController.m in Sources */,
 				71DC441F22C551E900E48539 /* MoviesGridViewController.m in Sources */,
 				71DC442222C5564800E48539 /* MovieCollectionViewCell.m in Sources */,
