@@ -88,10 +88,9 @@
                                                         <constraint firstAttribute="width" constant="148" id="uzz-FB-zhm"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toy Story 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkS-fv-FNP">
-                                                    <rect key="frame" x="164" y="0.0" width="598" height="33"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" horizontalCompressionResistancePriority="753" text="Toy Story 4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkS-fv-FNP">
+                                                    <rect key="frame" x="164" y="0.0" width="204" height="33"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="33" id="rEy-h4-Fvi"/>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="33" id="zZt-rX-01E"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
@@ -99,7 +98,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="go9-Xc-rSY">
-                                                    <rect key="frame" x="164" y="41" width="598" height="67"/>
+                                                    <rect key="frame" x="164" y="41" width="204" height="156.5"/>
                                                     <string key="text">Woody has always been confident about his place in the world and that his priority is taking care of his kid, whether that's Andy or Bonnie. But when Bonnie adds a reluctant new toy called \"Forky\" to her room, a road trip adventure alongside old and new friends will show Woody how big the world can be for a toy.</string>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                     <nil key="textColor"/>
@@ -111,7 +110,6 @@
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wrb-VD-8Lt" secondAttribute="bottom" constant="8" id="9Lr-t4-SXK"/>
                                                 <constraint firstItem="wrb-VD-8Lt" firstAttribute="leading" secondItem="QkD-Od-dgV" secondAttribute="leading" constant="8" id="EMc-cC-kCP"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="go9-Xc-rSY" secondAttribute="bottom" constant="8" id="EtF-wA-0zB"/>
-                                                <constraint firstAttribute="trailing" secondItem="GkS-fv-FNP" secondAttribute="trailing" constant="8" id="QxD-KD-Vey"/>
                                                 <constraint firstItem="go9-Xc-rSY" firstAttribute="top" secondItem="GkS-fv-FNP" secondAttribute="bottom" constant="8" id="Ul8-3H-MnE"/>
                                                 <constraint firstItem="GkS-fv-FNP" firstAttribute="top" secondItem="QkD-Od-dgV" secondAttribute="top" id="fiW-dO-e9n"/>
                                                 <constraint firstItem="GkS-fv-FNP" firstAttribute="leading" secondItem="wrb-VD-8Lt" secondAttribute="trailing" constant="8" id="i7w-li-9Qb"/>
@@ -343,6 +341,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="krn-5R-QpJ"/>
+        <segue reference="4GN-0E-gzT"/>
     </inferredMetricsTieBreakers>
 </document>
