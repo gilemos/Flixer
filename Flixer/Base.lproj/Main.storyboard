@@ -84,6 +84,7 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wrb-VD-8Lt">
                                                     <rect key="frame" x="8" y="8" width="148" height="189.5"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="height" constant="189.5" id="FfS-vt-3BB"/>
                                                         <constraint firstAttribute="width" constant="148" id="uzz-FB-zhm"/>
                                                     </constraints>
                                                 </imageView>
@@ -106,23 +107,15 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="wrb-VD-8Lt" secondAttribute="bottom" constant="8" id="2Jm-gR-XcE"/>
-                                                <constraint firstAttribute="bottom" secondItem="wrb-VD-8Lt" secondAttribute="bottom" constant="8" id="4hd-r3-Gg9"/>
                                                 <constraint firstItem="go9-Xc-rSY" firstAttribute="leading" secondItem="GkS-fv-FNP" secondAttribute="leading" id="5wD-hu-dRt"/>
-                                                <constraint firstItem="wrb-VD-8Lt" firstAttribute="top" secondItem="QkD-Od-dgV" secondAttribute="top" constant="8" id="8gu-8q-PxL"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wrb-VD-8Lt" secondAttribute="bottom" constant="8" id="9Lr-t4-SXK"/>
                                                 <constraint firstItem="wrb-VD-8Lt" firstAttribute="leading" secondItem="QkD-Od-dgV" secondAttribute="leading" constant="8" id="EMc-cC-kCP"/>
-                                                <constraint firstItem="GkS-fv-FNP" firstAttribute="leading" secondItem="wrb-VD-8Lt" secondAttribute="trailing" constant="8" id="ErT-EG-FAs"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="go9-Xc-rSY" secondAttribute="bottom" constant="8" id="EtF-wA-0zB"/>
                                                 <constraint firstAttribute="trailing" secondItem="GkS-fv-FNP" secondAttribute="trailing" constant="8" id="QxD-KD-Vey"/>
                                                 <constraint firstItem="go9-Xc-rSY" firstAttribute="top" secondItem="GkS-fv-FNP" secondAttribute="bottom" constant="8" id="Ul8-3H-MnE"/>
-                                                <constraint firstItem="wrb-VD-8Lt" firstAttribute="top" secondItem="QkD-Od-dgV" secondAttribute="top" constant="8" id="W0g-mo-Tsd"/>
-                                                <constraint firstItem="wrb-VD-8Lt" firstAttribute="leading" secondItem="QkD-Od-dgV" secondAttribute="leading" constant="8" id="bh0-6B-TGn"/>
                                                 <constraint firstItem="GkS-fv-FNP" firstAttribute="top" secondItem="QkD-Od-dgV" secondAttribute="top" id="fiW-dO-e9n"/>
-                                                <constraint firstAttribute="bottom" secondItem="wrb-VD-8Lt" secondAttribute="bottom" constant="8" id="gaE-MW-hRH"/>
                                                 <constraint firstItem="GkS-fv-FNP" firstAttribute="leading" secondItem="wrb-VD-8Lt" secondAttribute="trailing" constant="8" id="i7w-li-9Qb"/>
                                                 <constraint firstAttribute="trailing" secondItem="go9-Xc-rSY" secondAttribute="trailing" constant="8" id="iBg-CG-kKF"/>
-                                                <constraint firstItem="wrb-VD-8Lt" firstAttribute="leading" secondItem="QkD-Od-dgV" secondAttribute="leading" constant="8" id="otF-5O-ElF"/>
-                                                <constraint firstItem="go9-Xc-rSY" firstAttribute="leading" secondItem="wrb-VD-8Lt" secondAttribute="trailing" constant="8" id="oxS-te-swY"/>
                                                 <constraint firstAttribute="trailing" secondItem="GkS-fv-FNP" secondAttribute="trailing" constant="8" id="uVa-yT-Gu5"/>
                                                 <constraint firstItem="wrb-VD-8Lt" firstAttribute="top" secondItem="QkD-Od-dgV" secondAttribute="top" constant="8" id="xTe-0o-eWf"/>
                                             </constraints>

@@ -110,6 +110,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    self.moviesTableView.rowHeight = UITableViewAutomaticDimension;
+    
     MovieCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellTemplate"];
     
     NSDictionary *movieNames = self.movies[indexPath.row];
