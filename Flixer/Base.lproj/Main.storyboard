@@ -89,7 +89,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toy Story 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkS-fv-FNP">
-                                                    <rect key="frame" x="164" y="0.0" width="204" height="33"/>
+                                                    <rect key="frame" x="164" y="0.0" width="598" height="33"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="33" id="rEy-h4-Fvi"/>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="33" id="zZt-rX-01E"/>
@@ -99,7 +99,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="go9-Xc-rSY">
-                                                    <rect key="frame" x="164" y="41" width="204" height="156.5"/>
+                                                    <rect key="frame" x="164" y="41" width="598" height="67"/>
                                                     <string key="text">Woody has always been confident about his place in the world and that his priority is taking care of his kid, whether that's Andy or Bonnie. But when Bonnie adds a reluctant new toy called \"Forky\" to her room, a road trip adventure alongside old and new friends will show Woody how big the world can be for a toy.</string>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                     <nil key="textColor"/>
@@ -180,12 +180,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="189" height="231"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U8j-9m-fBN">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U8j-9m-fBN">
                                                     <rect key="frame" x="0.0" y="0.0" width="189" height="231"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="U8j-9m-fBN" firstAttribute="top" secondItem="c2q-WU-Pwz" secondAttribute="top" id="937-JP-eBm"/>
+                                            <constraint firstAttribute="bottom" secondItem="U8j-9m-fBN" secondAttribute="bottom" id="Kbo-sr-lEH"/>
+                                            <constraint firstAttribute="trailing" secondItem="U8j-9m-fBN" secondAttribute="trailing" id="RZs-II-AbQ"/>
+                                            <constraint firstItem="U8j-9m-fBN" firstAttribute="leading" secondItem="c2q-WU-Pwz" secondAttribute="leading" id="i4v-SP-BvZ"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="picture" destination="U8j-9m-fBN" id="0Ww-dC-jSA"/>
                                             <segue destination="zc3-Jk-fNv" kind="push" id="krn-5R-QpJ"/>
@@ -235,8 +240,8 @@
                                                     <outletCollection property="gestureRecognizers" destination="a7O-LR-wyL" appends="YES" id="v4u-wx-7WB"/>
                                                 </connections>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRe-aq-256">
-                                                <rect key="frame" x="165" y="307" width="241" height="46"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRe-aq-256">
+                                                <rect key="frame" x="165" y="306.5" width="241" height="50"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="azH-mp-cdn"/>
@@ -261,6 +266,7 @@
                                             <constraint firstItem="phr-Ip-fYM" firstAttribute="leading" secondItem="Grb-dZ-kYU" secondAttribute="leading" id="33C-g0-aDs"/>
                                             <constraint firstAttribute="trailing" secondItem="xRe-aq-256" secondAttribute="trailing" constant="8" id="6uq-OL-79I"/>
                                             <constraint firstItem="6xc-xA-M4T" firstAttribute="leading" secondItem="Grb-dZ-kYU" secondAttribute="leading" constant="16" id="AJR-2O-ERn"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Wsj-xB-gHR" secondAttribute="bottom" constant="40" id="Da7-so-VbD"/>
                                             <constraint firstItem="Wsj-xB-gHR" firstAttribute="leading" secondItem="Grb-dZ-kYU" secondAttribute="leading" constant="16" id="KoW-Zn-MhO"/>
                                             <constraint firstAttribute="trailing" secondItem="Wsj-xB-gHR" secondAttribute="trailing" constant="16" id="MvJ-jv-th3"/>
                                             <constraint firstItem="xRe-aq-256" firstAttribute="top" secondItem="phr-Ip-fYM" secondAttribute="bottom" constant="8" id="aWl-Qt-Y4T"/>
@@ -337,6 +343,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4GN-0E-gzT"/>
+        <segue reference="krn-5R-QpJ"/>
     </inferredMetricsTieBreakers>
 </document>
